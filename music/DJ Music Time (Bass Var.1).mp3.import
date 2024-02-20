@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bm2ded7m8ghdw"
+path="res://.godot/imported/DJ Music Time (Bass Var.1).mp3-28a1ef142b27760935369b74c8b6245e.mp3str"
+
+[deps]
+
+source_file="res://music/DJ Music Time (Bass Var.1).mp3"
+dest_files=["res://.godot/imported/DJ Music Time (Bass Var.1).mp3-28a1ef142b27760935369b74c8b6245e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

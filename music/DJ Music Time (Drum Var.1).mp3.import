@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dyafedm1u83lr"
+path="res://.godot/imported/DJ Music Time (Drum Var.1).mp3-3eb2b7fdd1767c941c18f0c25ccd163d.mp3str"
+
+[deps]
+
+source_file="res://music/DJ Music Time (Drum Var.1).mp3"
+dest_files=["res://.godot/imported/DJ Music Time (Drum Var.1).mp3-3eb2b7fdd1767c941c18f0c25ccd163d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

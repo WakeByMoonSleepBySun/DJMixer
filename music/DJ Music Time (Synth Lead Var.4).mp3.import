@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://877g3qb7bmun"
+path="res://.godot/imported/DJ Music Time (Synth Lead Var.4).mp3-2e745ce27c875c6745fa445671da8535.mp3str"
+
+[deps]
+
+source_file="res://music/DJ Music Time (Synth Lead Var.4).mp3"
+dest_files=["res://.godot/imported/DJ Music Time (Synth Lead Var.4).mp3-2e745ce27c875c6745fa445671da8535.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

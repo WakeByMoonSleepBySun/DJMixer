@@ -1,0 +1,32 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1708409843
+DJ_Mixer.gd::GDScript::-1::1708044415::0::1::::<>Node<>::
+DJ_Mixer.tscn::PackedScene::253561733325570437::1708409791::0::1::::<><>::res://music/DJDeck_5.png<>res://DJ_Mixer.gd<>res://music/DJ Music Time (Bass Var.1).mp3<>res://music/GUIDE_TRACK.mp3<>res://music/DJ Music Time (Drum Var.1).mp3<>res://music/DJ Music Time (Synth Chord Var.1).mp3<>res://music/DJ Music Time (Synth Lead Var.1).mp3
+export_presets.cfg::TextFile::-1::1708050206::0::1::::<><>::
+icon.svg::CompressedTexture2D::2553208040997416911::1707879441::1707879448::1::::<><>::
+::res://build/::1708050193
+::res://build/macOs/::1708050450
+::res://build/web/::1708049829
+index.apple-touch-icon.png::CompressedTexture2D::6838519110446897274::1708045228::1708049829::1::::<><>::
+index.icon.png::CompressedTexture2D::2363672453041346966::1708045228::1708049829::1::::<><>::
+index.png::CompressedTexture2D::468358214164990442::1708045228::1708049829::1::::<><>::
+::res://build/windows/::1708050440
+::res://music/::1708408601
+DJ Music Time (Bass Var.1).mp3::AudioStreamMP3::3284614508456382552::1707973587::1707977374::1::::<><>::
+DJ Music Time (Bass Var.2).mp3::AudioStreamMP3::2855053286428040859::1707973587::1707977377::1::::<><>::
+DJ Music Time (Bass Var.3).mp3::AudioStreamMP3::3165729186461884265::1707973587::1707977380::1::::<><>::
+DJ Music Time (Bass Var.4).mp3::AudioStreamMP3::750830216130108415::1707973587::1707977383::1::::<><>::
+DJ Music Time (Drum Var.1).mp3::AudioStreamMP3::8844105203848613247::1707973587::1707977386::1::::<><>::
+DJ Music Time (Drum Var.2).mp3::AudioStreamMP3::5674188833983934988::1707973587::1707977388::1::::<><>::
+DJ Music Time (Drum Var.3).mp3::AudioStreamMP3::4008087235995373920::1707973587::1707977392::1::::<><>::
+DJ Music Time (Drum Var.4).mp3::AudioStreamMP3::3496296171195586563::1707973587::1707977394::1::::<><>::
+DJ Music Time (Synth Chord Var.1).mp3::AudioStreamMP3::527180091232728131::1707973587::1707977397::1::::<><>::
+DJ Music Time (Synth Chord Var.2).mp3::AudioStreamMP3::2342224896870610859::1707973587::1707977399::1::::<><>::
+DJ Music Time (Synth Chord Var.3).mp3::AudioStreamMP3::6955139961343618138::1707973587::1707977401::1::::<><>::
+DJ Music Time (Synth Chord Var.4).mp3::AudioStreamMP3::2542978450940421079::1707973587::1707977404::1::::<><>::
+DJ Music Time (Synth Lead Var.1).mp3::AudioStreamMP3::9112842190032380131::1707973587::1707977406::1::::<><>::
+DJ Music Time (Synth Lead Var.2).mp3::AudioStreamMP3::4887423515472304613::1707973587::1707977409::1::::<><>::
+DJ Music Time (Synth Lead Var.3).mp3::AudioStreamMP3::8770713500766438445::1707973587::1707977412::1::::<><>::
+DJ Music Time (Synth Lead Var.4).mp3::AudioStreamMP3::2384247082175864461::1707973587::1707977414::1::::<><>::
+DJDeck_5.png::CompressedTexture2D::4627801382453048674::1708408600::1708408601::1::::<><>::
+GUIDE_TRACK.mp3::AudioStreamMP3::5647062493620579423::1708043997::1708044091::1::::<><>::
