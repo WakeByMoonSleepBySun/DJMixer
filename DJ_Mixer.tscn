@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://du3eifj3a7v2"]
+[gd_scene load_steps=16 format=3 uid="uid://du3eifj3a7v2"]
 
 [ext_resource type="Texture2D" uid="uid://b660hh2s3ekvq" path="res://music/DJDeck_5.png" id="1_jrcrm"]
 [ext_resource type="Script" path="res://DJ_Mixer.gd" id="1_shq18"]
@@ -14,12 +14,26 @@
 [ext_resource type="Texture2D" uid="uid://o6keny042iwn" path="res://ButtonTextures/RedButton_DJ_off.png" id="7_d2qh8"]
 [ext_resource type="Texture2D" uid="uid://ytry8cqije1d" path="res://ButtonTextures/RedButton_DJ_on.png" id="8_5hhmp"]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i2gxr"]
+blend_mode = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bm1nc"]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="DjDeck5" type="Sprite2D" parent="."]
 position = Vector2(400, 320)
 scale = Vector2(0.388897, 0.388897)
 texture = ExtResource("1_jrcrm")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.286275, 0.564706, 1, 0.764706)
+material = SubResource("CanvasItemMaterial_i2gxr")
+offset_left = 720.0
+offset_top = -8.0
+offset_right = 808.0
+offset_bottom = 328.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bm1nc")
 
 [node name="AudioControls" type="Node2D" parent="."]
 script = ExtResource("1_shq18")
@@ -278,10 +292,10 @@ theme_override_font_sizes/normal_font_size = 20
 text = "1"
 
 [node name="volume_slider" type="VSlider" parent="AudioControls"]
-offset_left = 992.0
-offset_top = 32.0
-offset_right = 1064.0
-offset_bottom = 368.0
+offset_left = 728.0
+offset_top = 8.0
+offset_right = 800.0
+offset_bottom = 304.0
 max_value = 1.0
 step = 0.05
 value = 0.5
