@@ -1,12 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://du3eifj3a7v2"]
+[gd_scene load_steps=14 format=3 uid="uid://du3eifj3a7v2"]
 
 [ext_resource type="Texture2D" uid="uid://b660hh2s3ekvq" path="res://music/DJDeck_5.png" id="1_jrcrm"]
 [ext_resource type="Script" path="res://DJ_Mixer.gd" id="1_shq18"]
 [ext_resource type="AudioStream" uid="uid://bm2ded7m8ghdw" path="res://music/DJ Music Time (Bass Var.1).mp3" id="2_cu4xw"]
 [ext_resource type="AudioStream" uid="uid://cmpqkaef28f40" path="res://music/GUIDE_TRACK.mp3" id="2_vdlx6"]
 [ext_resource type="AudioStream" uid="uid://dyafedm1u83lr" path="res://music/DJ Music Time (Drum Var.1).mp3" id="3_stl2y"]
+[ext_resource type="Texture2D" uid="uid://gg71mu01nipi" path="res://ButtonTextures/RedButton_play_off.png" id="3_v7q3b"]
+[ext_resource type="Texture2D" uid="uid://b3qxstb1jki8h" path="res://ButtonTextures/RedButton_play_on.png" id="4_4q4pr"]
 [ext_resource type="AudioStream" uid="uid://hrmtxogj4aed" path="res://music/DJ Music Time (Synth Chord Var.1).mp3" id="4_erqkp"]
 [ext_resource type="AudioStream" uid="uid://d23lgdp1d6c24" path="res://music/DJ Music Time (Synth Lead Var.1).mp3" id="5_3gh8v"]
+[ext_resource type="Texture2D" uid="uid://1dlnclvsa7jb" path="res://ButtonTextures/RedButton_stop_off.png" id="5_yurle"]
+[ext_resource type="Texture2D" uid="uid://oys3t3rpslbs" path="res://ButtonTextures/RedButton_stop_on.png" id="6_6ccsg"]
+[ext_resource type="Texture2D" uid="uid://o6keny042iwn" path="res://ButtonTextures/RedButton_DJ_off.png" id="7_d2qh8"]
+[ext_resource type="Texture2D" uid="uid://ytry8cqije1d" path="res://ButtonTextures/RedButton_DJ_on.png" id="8_5hhmp"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -18,28 +24,30 @@ texture = ExtResource("1_jrcrm")
 [node name="AudioControls" type="Node2D" parent="."]
 script = ExtResource("1_shq18")
 
-[node name="playBtn" type="Button" parent="AudioControls"]
-offset_left = 72.0
-offset_top = 448.0
-offset_right = 301.0
-offset_bottom = 615.0
-text = "Play"
+[node name="playBtn" type="TextureButton" parent="AudioControls"]
+offset_left = 83.0
+offset_top = 472.0
+offset_right = 161.0
+offset_bottom = 554.0
+texture_normal = ExtResource("3_v7q3b")
+texture_pressed = ExtResource("4_4q4pr")
 
-[node name="stopBtn" type="Button" parent="AudioControls"]
-offset_left = 320.0
-offset_top = 448.0
-offset_right = 552.0
-offset_bottom = 615.0
-text = "Stop"
+[node name="stopBtn" type="TextureButton" parent="AudioControls"]
+offset_left = 50.0
+offset_top = 546.0
+offset_right = 128.0
+offset_bottom = 628.0
+texture_normal = ExtResource("5_yurle")
+texture_pressed = ExtResource("6_6ccsg")
 
-[node name="dj_toggle" type="CheckButton" parent="AudioControls"]
-offset_left = 584.0
-offset_top = 448.0
-offset_right = 685.0
-offset_bottom = 504.0
-scale = Vector2(3, 3)
-theme_override_font_sizes/font_size = 10
-text = "Activate DJ"
+[node name="djBtn" type="TextureButton" parent="AudioControls"]
+offset_left = 641.0
+offset_top = 472.0
+offset_right = 719.0
+offset_bottom = 554.0
+toggle_mode = true
+texture_normal = ExtResource("7_d2qh8")
+texture_pressed = ExtResource("8_5hhmp")
 
 [node name="guideTrack" type="AudioStreamPlayer" parent="AudioControls"]
 stream = ExtResource("2_vdlx6")
@@ -58,215 +66,215 @@ stream = ExtResource("4_erqkp")
 stream = ExtResource("5_3gh8v")
 
 [node name="bass0" type="Button" parent="AudioControls"]
-offset_left = 72.0
-offset_top = 32.0
-offset_right = 206.0
-offset_bottom = 109.0
+offset_left = 208.0
+offset_top = 480.0
+offset_right = 280.0
+offset_bottom = 511.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Bass 1"
 
 [node name="bass1" type="Button" parent="AudioControls"]
-offset_left = 216.0
-offset_top = 32.0
-offset_right = 350.0
-offset_bottom = 109.0
+offset_left = 288.0
+offset_top = 480.0
+offset_right = 360.0
+offset_bottom = 511.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Bass 2"
 
 [node name="bass2" type="Button" parent="AudioControls"]
-offset_left = 360.0
-offset_top = 32.0
-offset_right = 494.0
-offset_bottom = 109.0
+offset_left = 368.0
+offset_top = 480.0
+offset_right = 440.0
+offset_bottom = 511.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Bass 3"
 
 [node name="bass3" type="Button" parent="AudioControls"]
-offset_left = 504.0
-offset_top = 32.0
-offset_right = 638.0
-offset_bottom = 109.0
+offset_left = 448.0
+offset_top = 480.0
+offset_right = 520.0
+offset_bottom = 512.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Bass 4"
 
 [node name="bass4" type="Button" parent="AudioControls"]
-offset_left = 648.0
-offset_top = 32.0
-offset_right = 782.0
-offset_bottom = 109.0
+offset_left = 528.0
+offset_top = 480.0
+offset_right = 561.0
+offset_bottom = 511.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Off"
 
 [node name="drum0" type="Button" parent="AudioControls"]
-offset_left = 72.0
-offset_top = 120.0
-offset_right = 206.0
-offset_bottom = 197.0
+offset_left = 208.0
+offset_top = 522.0
+offset_right = 280.0
+offset_bottom = 553.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Drum 1"
 
 [node name="drum1" type="Button" parent="AudioControls"]
-offset_left = 216.0
-offset_top = 120.0
-offset_right = 350.0
-offset_bottom = 197.0
+offset_left = 288.0
+offset_top = 520.0
+offset_right = 360.0
+offset_bottom = 551.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Drum 2"
 
 [node name="drum2" type="Button" parent="AudioControls"]
-offset_left = 360.0
-offset_top = 120.0
-offset_right = 494.0
-offset_bottom = 197.0
+offset_left = 368.0
+offset_top = 520.0
+offset_right = 440.0
+offset_bottom = 551.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Drum 3"
 
 [node name="drum3" type="Button" parent="AudioControls"]
-offset_left = 504.0
-offset_top = 120.0
-offset_right = 638.0
-offset_bottom = 197.0
+offset_left = 448.0
+offset_top = 520.0
+offset_right = 520.0
+offset_bottom = 551.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Drum 4"
 
 [node name="drum4" type="Button" parent="AudioControls"]
-offset_left = 648.0
-offset_top = 120.0
-offset_right = 782.0
-offset_bottom = 197.0
+offset_left = 528.0
+offset_top = 520.0
+offset_right = 561.0
+offset_bottom = 551.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Off"
 
 [node name="chord0" type="Button" parent="AudioControls"]
-offset_left = 72.0
-offset_top = 208.0
-offset_right = 206.0
-offset_bottom = 285.0
+offset_left = 208.0
+offset_top = 562.0
+offset_right = 280.0
+offset_bottom = 593.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Chord 1"
 
 [node name="chord1" type="Button" parent="AudioControls"]
-offset_left = 216.0
-offset_top = 208.0
-offset_right = 350.0
-offset_bottom = 285.0
+offset_left = 288.0
+offset_top = 560.0
+offset_right = 360.0
+offset_bottom = 591.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Chord 2"
 
 [node name="chord2" type="Button" parent="AudioControls"]
-offset_left = 360.0
-offset_top = 208.0
-offset_right = 494.0
-offset_bottom = 285.0
+offset_left = 368.0
+offset_top = 560.0
+offset_right = 440.0
+offset_bottom = 591.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Chord 3"
 
 [node name="chord3" type="Button" parent="AudioControls"]
-offset_left = 504.0
-offset_top = 208.0
-offset_right = 638.0
-offset_bottom = 285.0
+offset_left = 448.0
+offset_top = 560.0
+offset_right = 520.0
+offset_bottom = 591.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Chord 4"
 
 [node name="chord4" type="Button" parent="AudioControls"]
-offset_left = 648.0
-offset_top = 208.0
-offset_right = 782.0
-offset_bottom = 285.0
+offset_left = 528.0
+offset_top = 560.0
+offset_right = 561.0
+offset_bottom = 591.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Off"
 
 [node name="lead0" type="Button" parent="AudioControls"]
-offset_left = 72.0
-offset_top = 296.0
-offset_right = 206.0
-offset_bottom = 373.0
+offset_left = 208.0
+offset_top = 602.0
+offset_right = 280.0
+offset_bottom = 633.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Lead 1"
 
 [node name="lead1" type="Button" parent="AudioControls"]
-offset_left = 216.0
-offset_top = 296.0
-offset_right = 350.0
-offset_bottom = 373.0
+offset_left = 288.0
+offset_top = 602.0
+offset_right = 360.0
+offset_bottom = 633.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Lead 2"
 
 [node name="lead2" type="Button" parent="AudioControls"]
-offset_left = 360.0
-offset_top = 296.0
-offset_right = 494.0
-offset_bottom = 373.0
+offset_left = 368.0
+offset_top = 602.0
+offset_right = 440.0
+offset_bottom = 633.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Lead 3"
 
 [node name="lead3" type="Button" parent="AudioControls"]
-offset_left = 504.0
-offset_top = 296.0
-offset_right = 638.0
-offset_bottom = 373.0
+offset_left = 448.0
+offset_top = 600.0
+offset_right = 520.0
+offset_bottom = 631.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Lead 4"
 
 [node name="lead4" type="Button" parent="AudioControls"]
-offset_left = 648.0
-offset_top = 296.0
-offset_right = 782.0
-offset_bottom = 373.0
+offset_left = 528.0
+offset_top = 600.0
+offset_right = 561.0
+offset_bottom = 631.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Off"
 
 [node name="bass_label" type="RichTextLabel" parent="AudioControls"]
-offset_left = 808.0
-offset_top = 32.0
-offset_right = 888.0
-offset_bottom = 112.0
-theme_override_font_sizes/normal_font_size = 55
+offset_left = 568.0
+offset_top = 480.0
+offset_right = 592.0
+offset_bottom = 512.0
+theme_override_font_sizes/normal_font_size = 20
 text = "1"
 
 [node name="drum_label" type="RichTextLabel" parent="AudioControls"]
-offset_left = 808.0
-offset_top = 120.0
-offset_right = 888.0
-offset_bottom = 200.0
-theme_override_font_sizes/normal_font_size = 55
+offset_left = 568.0
+offset_top = 520.0
+offset_right = 592.0
+offset_bottom = 552.0
+theme_override_font_sizes/normal_font_size = 20
 text = "1"
 
 [node name="chord_label" type="RichTextLabel" parent="AudioControls"]
-offset_left = 808.0
-offset_top = 208.0
-offset_right = 888.0
-offset_bottom = 288.0
-theme_override_font_sizes/normal_font_size = 55
+offset_left = 568.0
+offset_top = 560.0
+offset_right = 592.0
+offset_bottom = 592.0
+theme_override_font_sizes/normal_font_size = 20
 text = "1"
 
 [node name="lead_label" type="RichTextLabel" parent="AudioControls"]
-offset_left = 808.0
-offset_top = 296.0
-offset_right = 888.0
-offset_bottom = 376.0
-theme_override_font_sizes/normal_font_size = 55
+offset_left = 568.0
+offset_top = 600.0
+offset_right = 600.0
+offset_bottom = 632.0
+theme_override_font_sizes/normal_font_size = 20
 text = "1"
 
 [node name="volume_slider" type="VSlider" parent="AudioControls"]
@@ -280,7 +288,7 @@ value = 0.5
 
 [connection signal="pressed" from="AudioControls/playBtn" to="AudioControls" method="_play_button_pressed"]
 [connection signal="pressed" from="AudioControls/stopBtn" to="AudioControls" method="_stop_button_pressed"]
-[connection signal="toggled" from="AudioControls/dj_toggle" to="AudioControls" method="activate_dj_toggled"]
+[connection signal="pressed" from="AudioControls/djBtn" to="AudioControls" method="activate_dj_toggled"]
 [connection signal="finished" from="AudioControls/guideTrack" to="AudioControls" method="handle_track_finish"]
 [connection signal="pressed" from="AudioControls/bass0" to="AudioControls" method="track_button_pressed" binds= ["bass", 0]]
 [connection signal="pressed" from="AudioControls/bass1" to="AudioControls" method="track_button_pressed" binds= ["bass", 1]]

@@ -100,30 +100,30 @@ func adjust_all_track_volumes(volume: float):
 	$chordAudio.volume_db = volume
 	$leadAudio.volume_db = volume
 
-func activate_dj_toggled(toggled_on: bool):
-	is_dj_active = toggled_on
+func activate_dj_toggled():
+	is_dj_active = !is_dj_active
 	
 	# Disable/Enable btns
-	$bass0.disabled = toggled_on
-	$bass1.disabled = toggled_on
-	$bass2.disabled = toggled_on
-	$bass3.disabled = toggled_on
-	$bass4.disabled = toggled_on
-	$drum0.disabled = toggled_on
-	$drum1.disabled = toggled_on
-	$drum2.disabled = toggled_on
-	$drum3.disabled = toggled_on
-	$drum4.disabled = toggled_on
-	$chord0.disabled = toggled_on
-	$chord1.disabled = toggled_on
-	$chord2.disabled = toggled_on
-	$chord3.disabled = toggled_on
-	$chord4.disabled = toggled_on
-	$lead0.disabled = toggled_on
-	$lead1.disabled = toggled_on
-	$lead2.disabled = toggled_on
-	$lead3.disabled = toggled_on
-	$lead4.disabled = toggled_on
+	#$bass0.disabled = is_dj_active
+	#$bass1.disabled = is_dj_active
+	#$bass2.disabled = is_dj_active
+	#$bass3.disabled = is_dj_active
+	#$bass4.disabled = is_dj_active
+	#$drum0.disabled = is_dj_active
+	#$drum1.disabled = is_dj_active
+	#$drum2.disabled = is_dj_active
+	#$drum3.disabled = is_dj_active
+	#$drum4.disabled = is_dj_active
+	#$chord0.disabled = is_dj_active
+	#$chord1.disabled = is_dj_active
+	#$chord2.disabled = is_dj_active
+	#$chord3.disabled = is_dj_active
+	#$chord4.disabled = is_dj_active
+	#$lead0.disabled = is_dj_active
+	#$lead1.disabled = is_dj_active
+	#$lead2.disabled = is_dj_active
+	#$lead3.disabled = is_dj_active
+	#$lead4.disabled = is_dj_active
 
 # This is called when the guideTrack completes
 # guideTrack does not auto loop so we can catch the

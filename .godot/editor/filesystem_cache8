@@ -1,9 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708409843
-DJ_Mixer.gd::GDScript::-1::1708044415::0::1::::<>Node<>::
-DJ_Mixer.tscn::PackedScene::253561733325570437::1708409791::0::1::::<><>::res://music/DJDeck_5.png<>res://DJ_Mixer.gd<>res://music/DJ Music Time (Bass Var.1).mp3<>res://music/GUIDE_TRACK.mp3<>res://music/DJ Music Time (Drum Var.1).mp3<>res://music/DJ Music Time (Synth Chord Var.1).mp3<>res://music/DJ Music Time (Synth Lead Var.1).mp3
+::res://::1708412297
+DJ_Mixer.gd::GDScript::-1::1708412100::0::1::::<>Node<>::
+DJ_Mixer.tscn::PackedScene::253561733325570437::1708412297::0::1::::<><>::uid://b660hh2s3ekvq::::res://music/DJDeck_5.png<>res://DJ_Mixer.gd<>uid://bm2ded7m8ghdw::::res://music/DJ Music Time (Bass Var.1).mp3<>uid://cmpqkaef28f40::::res://music/GUIDE_TRACK.mp3<>uid://dyafedm1u83lr::::res://music/DJ Music Time (Drum Var.1).mp3<>uid://gg71mu01nipi::::res://ButtonTextures/RedButton_play_off.png<>uid://b3qxstb1jki8h::::res://ButtonTextures/RedButton_play_on.png<>uid://hrmtxogj4aed::::res://music/DJ Music Time (Synth Chord Var.1).mp3<>uid://d23lgdp1d6c24::::res://music/DJ Music Time (Synth Lead Var.1).mp3<>uid://1dlnclvsa7jb::::res://ButtonTextures/RedButton_stop_off.png<>uid://oys3t3rpslbs::::res://ButtonTextures/RedButton_stop_on.png
 export_presets.cfg::TextFile::-1::1708050206::0::1::::<><>::
 icon.svg::CompressedTexture2D::2553208040997416911::1707879441::1707879448::1::::<><>::
+README.md::TextFile::-1::1708409943::0::1::::<><>::
+RedButton_DJ_off.png::CompressedTexture2D::3095641922390380781::1708410977::1708410977::1::::<><>::
+RedButton_DJ_on.png::CompressedTexture2D::4905025519059022196::1708410977::1708410977::1::::<><>::
+RedButton_play_off.png::CompressedTexture2D::6053263702532197603::1708410977::1708410977::1::::<><>::
+RedButton_play_on.png::CompressedTexture2D::7477409055091786826::1708410977::1708410977::1::::<><>::
+RedButton_stop_off.png::CompressedTexture2D::8539809089907483184::1708410977::1708410977::1::::<><>::
+RedButton_stop_on.png::CompressedTexture2D::8813374523526451808::1708410977::1708410977::1::::<><>::
 ::res://build/::1708050193
 ::res://build/macOs/::1708050450
 ::res://build/web/::1708049829
@@ -11,7 +18,14 @@ index.apple-touch-icon.png::CompressedTexture2D::6838519110446897274::1708045228
 index.icon.png::CompressedTexture2D::2363672453041346966::1708045228::1708049829::1::::<><>::
 index.png::CompressedTexture2D::468358214164990442::1708045228::1708049829::1::::<><>::
 ::res://build/windows/::1708050440
-::res://music/::1708408601
+::res://ButtonTextures/::1708412306
+RedButton_DJ_off.png::CompressedTexture2D::1047254555466159073::1708412306::1708412306::1::::<><>::
+RedButton_DJ_on.png::CompressedTexture2D::1724832209668840655::1708412306::1708412306::1::::<><>::
+RedButton_play_off.png::CompressedTexture2D::435509365110048206::1708412011::1708412011::1::::<><>::
+RedButton_play_on.png::CompressedTexture2D::4386167985429089641::1708412011::1708412011::1::::<><>::
+RedButton_stop_off.png::CompressedTexture2D::1831794293110000179::1708412306::1708412295::1::::<><>::
+RedButton_stop_on.png::CompressedTexture2D::1033332827120365312::1708412306::1708412306::1::::<><>::
+::res://music/::1708410913
 DJ Music Time (Bass Var.1).mp3::AudioStreamMP3::3284614508456382552::1707973587::1707977374::1::::<><>::
 DJ Music Time (Bass Var.2).mp3::AudioStreamMP3::2855053286428040859::1707973587::1707977377::1::::<><>::
 DJ Music Time (Bass Var.3).mp3::AudioStreamMP3::3165729186461884265::1707973587::1707977380::1::::<><>::
@@ -30,3 +44,4 @@ DJ Music Time (Synth Lead Var.3).mp3::AudioStreamMP3::8770713500766438445::17079
 DJ Music Time (Synth Lead Var.4).mp3::AudioStreamMP3::2384247082175864461::1707973587::1707977414::1::::<><>::
 DJDeck_5.png::CompressedTexture2D::4627801382453048674::1708408600::1708408601::1::::<><>::
 GUIDE_TRACK.mp3::AudioStreamMP3::5647062493620579423::1708043997::1708044091::1::::<><>::
+RedButton_play_off.png::CompressedTexture2D::7670652845961037942::1708410913::1708410850::1::::<><>::
